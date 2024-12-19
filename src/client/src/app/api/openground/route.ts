@@ -1,5 +1,5 @@
 import OpenLitHelper from "@/helpers/openlit";
-import { evaluate, getAllOpengroundRequests } from "@/lib/platform/openai/openlit/openground";
+import { evaluate, getAllOpengroundRequests } from "@/lib/platform/openground";
 
 export async function GET() {
 	const response = await getAllOpengroundRequests();

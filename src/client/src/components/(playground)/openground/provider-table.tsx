@@ -2,7 +2,7 @@ import {
 	EvalutatedResponseData,
 	ProviderType,
 	Providers,
-} from "@/store/openai/openlit/openground";
+} from "@/store/openground";
 import {
 	Table,
 	TableBody,
@@ -11,7 +11,7 @@ import {
 	TableRow,
 } from "@/components/ui/table";
 import { useRootStore } from "@/store";
-import { removeProvider } from "@/selectors/openai/openlit/openground";
+import { removeProvider } from "@/selectors/openground";
 import { Button } from "@/components/ui/button";
 import { FlaskRoundIcon, Settings2Icon, Trash2Icon } from "lucide-react";
 import { JsonViewer } from "@textea/json-viewer";

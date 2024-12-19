@@ -1,5 +1,5 @@
-import { SecretGetFilters } from "@/constants/openai/openlit/vault";
-import { getSecrets } from "@/lib/platform/openai/openlit/vault";
+import { SecretGetFilters } from "@/constants/vault";
+import { getSecrets } from "@/lib/platform/vault";
 
 export async function POST(request: Request) {
 	const formData = await request.json();

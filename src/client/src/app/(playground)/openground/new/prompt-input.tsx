@@ -8,7 +8,7 @@ import {
 	setEvaluatedData,
 	setEvaluatedLoading,
 	setPrompt,
-} from "@/selectors/openai/openlit/openground";
+} from "@/selectors/openground";
 import { useRootStore } from "@/store";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { usePostHog } from "posthog-js/react";

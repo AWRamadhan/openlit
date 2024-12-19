@@ -11,7 +11,7 @@ import {
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { useRootStore } from "@/store";
 import { getFilterDetails } from "@/selectors/filter";
-import { getPingStatus } from "@/selectors/openai/openlit/database-config";
+import { getPingStatus } from "@/selectors/database-config";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { COLORS } from "../../../../../colors";
 import IntermediateState from "@/components/(playground)/intermediate-state";

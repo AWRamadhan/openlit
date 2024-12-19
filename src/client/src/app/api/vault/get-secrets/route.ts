@@ -1,7 +1,7 @@
 import { SERVER_EVENTS } from "@/constants/events";
 import getMessage from "@/constants/messages";
-import { SecretGetFiltersWithApiKey } from "@/constants/openai/openlit/vault";
-import { getSecretsFromDatabaseId } from "@/lib/platform/openai/openlit/vault";
+import { SecretGetFiltersWithApiKey } from "@/constants/vault";
+import { getSecretsFromDatabaseId } from "@/lib/platform/vault";
 import PostHogServer from "@/lib/posthog";
 import asaw from "@/utils/asaw";
 import { randomUUID } from "crypto";

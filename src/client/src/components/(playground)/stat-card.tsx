@@ -3,7 +3,7 @@ import { memo, useCallback, useEffect } from "react";
 import { isNil, round } from "lodash";
 import { getFilterDetails } from "@/selectors/filter";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/openai/openlit/database-config";
+import { getPingStatus } from "@/selectors/database-config";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { LucideIcon, TrendingDown, TrendingUp } from "lucide-react";

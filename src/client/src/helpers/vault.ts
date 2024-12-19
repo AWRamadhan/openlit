@@ -1,4 +1,4 @@
-import { SecretInput } from "@/constants/openai/openlit/vault";
+import { SecretInput } from "@/constants/vault";
 
 export function verifySecretInput(secretInput: SecretInput) {
 	if (secretInput.key.length === 0) {

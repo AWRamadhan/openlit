@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { get } from "lodash";
 import { format } from "date-fns";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/openai/openlit/database-config";
+import { getPingStatus } from "@/selectors/database-config";
 import TableData from "@/components/common/table-data";
 import { BookOpenText, TrashIcon } from "lucide-react";
 import ConfirmationModal from "@/components/common/confirmation-modal";

@@ -1,4 +1,4 @@
-import { deleteSecret } from "@/lib/platform/openai/openlit/vault";
+import { deleteSecret } from "@/lib/platform/vault";
 
 export async function DELETE(_: Request, context: any) {
 	const { id } = context.params;

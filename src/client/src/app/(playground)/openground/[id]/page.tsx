@@ -1,8 +1,8 @@
 "use client";
-import OpengroundHeader from "@/components/(playground)/openai/openlit/openground/header";
-import ProviderTable from "@/components/(playground)/openai/openlit/openground/provider-table";
-import { providersConfig } from "@/constants/openai/openlit/openground";
-import { Providers } from "@/store/openai/openlit/openground";
+import OpengroundHeader from "@/components/(playground)/openground/header";
+import ProviderTable from "@/components/(playground)/openground/provider-table";
+import { providersConfig } from "@/constants/openground";
+import { Providers } from "@/store/openground";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { useCallback, useEffect } from "react";
 import { toast } from "sonner";

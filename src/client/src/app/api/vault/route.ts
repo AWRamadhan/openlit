@@ -1,5 +1,5 @@
-import { SecretInput } from "@/constants/openai/openlit/vault";
-import { upsertSecret } from "@/lib/platform/openai/openlit/vault";
+import { SecretInput } from "@/constants/vault";
+import { upsertSecret } from "@/lib/platform/vault";
 import asaw from "@/utils/asaw";
 
 export async function POST(request: Request) {

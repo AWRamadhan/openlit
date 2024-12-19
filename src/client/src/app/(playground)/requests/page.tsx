@@ -7,7 +7,7 @@ import RequestDetails from "@/components/(playground)/request/request-details";
 import { toast } from "sonner";
 import { getFilterDetails } from "@/selectors/filter";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/openai/openlit/database-config";
+import { getPingStatus } from "@/selectors/database-config";
 import List from "./list";
 
 export default function RequestPage() {

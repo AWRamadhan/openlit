@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/table";
 import { EyeIcon } from "lucide-react";
 import { get } from "lodash";
-import OpengroundHeader from "@/components/(playground)/openai/openlit/openground/header";
+import OpengroundHeader from "@/components/(playground)/openground/header";
 
 const columns = [
 	{

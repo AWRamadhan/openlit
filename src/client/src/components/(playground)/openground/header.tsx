@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { getEvaluatedResponse, resetOpenground } from "@/selectors/openai/openlit/openground";
+import { getEvaluatedResponse, resetOpenground } from "@/selectors/openground";
 import { useRootStore } from "@/store";
 import Link from "next/link";
 

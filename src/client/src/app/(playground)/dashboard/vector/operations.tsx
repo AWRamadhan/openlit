@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getChartColors } from "@/constants/chart-colors";
 import { getFilterParamsForDashboard } from "@/helpers/filter";
-import { getPingStatus } from "@/selectors/openai/openlit/database-config";
+import { getPingStatus } from "@/selectors/database-config";
 import { getFilterDetails } from "@/selectors/filter";
 import { useRootStore } from "@/store";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";

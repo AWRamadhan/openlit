@@ -2,7 +2,7 @@
 
 import PromptInput from "./prompt-input";
 import Providers from "./providers";
-import OpengroundHeader from "@/components/(playground)/openai/openlit/openground/header";
+import OpengroundHeader from "@/components/(playground)/openground/header";
 
 export default function Openground() {
 	return (

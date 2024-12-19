@@ -10,7 +10,7 @@ import { getDBConfigByUser } from "@/lib/db-config";
 import {
 	generateOpengroundStats,
 	parseOpengroundData,
-} from "@/helpers/openai/openlit/openground";
+} from "@/helpers/openground";
 
 async function createOpenGroundRequest(dataObject: {
 	responseMeta: any;

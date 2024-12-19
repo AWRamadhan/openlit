@@ -2,7 +2,7 @@
 import ConfirmationModal from "@/components/common/confirmation-modal";
 import TableData from "@/components/common/table-data";
 import { Badge } from "@/components/ui/badge";
-import { getPingStatus } from "@/selectors/openai/openlit/database-config";
+import { getPingStatus } from "@/selectors/database-config";
 import { useRootStore } from "@/store";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import copy from "copy-to-clipboard";

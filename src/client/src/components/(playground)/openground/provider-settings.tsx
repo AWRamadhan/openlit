@@ -17,8 +17,8 @@ import {
 	SheetTrigger,
 } from "@/components/ui/sheet";
 import { ReactNode } from "react";
-import { setProviderConfig } from "@/selectors/openai/openlit/openground";
-import { ProviderType, Providers } from "@/store/openai/openlit/openground";
+import { setProviderConfig } from "@/selectors/openground";
+import { ProviderType, Providers } from "@/store/openground";
 import { useRootStore } from "@/store";
 
 const ProviderSettings = ({

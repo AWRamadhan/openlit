@@ -1,6 +1,6 @@
 import DataCharts from "./data-charts";
 import NumberStats from "./number-stats";
-import RequestsPerTime from "./openai/openlit/requests-per-time";
+import RequestsPerTime from "./requests-per-time";
 import TokenCharts from "./token-charts";
 
 export default function LLMDashboard() {

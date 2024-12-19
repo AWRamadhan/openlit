@@ -1,4 +1,4 @@
-import ManageKeys from "@/components/(playground)/openai/openlit/api-keys/manage";
+import ManageKeys from "@/components/(playground)/api-keys/manage";
 
 export default function APIKeys() {
 	return (

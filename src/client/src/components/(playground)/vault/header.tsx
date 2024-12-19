@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import SecretForm from "./form";
 import RouteBreadcrumbs from "../route-breadcrumbs";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/openai/openlit/database-config";
+import { getPingStatus } from "@/selectors/database-config";
 import VaultUsage from "./usage";
 
 export default function VaultHeader({

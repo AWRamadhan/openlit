@@ -1,6 +1,6 @@
 import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
-import DatabaseConfigSwitch from "./openai/openlit/database-config-switch";
+import DatabaseConfigSwitch from "./database-config-switch";
 import {
 	DropdownMenu,
 	DropdownMenuContent,

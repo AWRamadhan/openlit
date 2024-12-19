@@ -1,4 +1,4 @@
-import { deleteAPIKey } from "@/lib/platform/openai/openlit/api-keys";
+import { deleteAPIKey } from "@/lib/platform/api-keys";
 
 export async function DELETE(_: Request, context: any) {
 	const { id } = context.params;

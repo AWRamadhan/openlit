@@ -5,7 +5,7 @@ import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { toast } from "sonner";
 import { getFilterDetails } from "@/selectors/filter";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/openai/openlit/database-config";
+import { getPingStatus } from "@/selectors/database-config";
 import RequestFilter from "@/components/(playground)/request/request-filter";
 import { omit } from "lodash";
 import List from "./list";

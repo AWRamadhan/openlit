@@ -1,5 +1,5 @@
 "use client";
-import PromptHubHeader from "@/components/(playground)/openai/openlit/prompt-hub/header";
+import PromptHubHeader from "@/components/(playground)/prompt-hub/header";
 import { useParams } from "next/navigation";
 
 export default function PromptLayout({

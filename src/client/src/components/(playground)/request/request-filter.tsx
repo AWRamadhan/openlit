@@ -14,7 +14,7 @@ import SlideWithValue from "@/components/(playground)/filter/slider-with-value";
 import { Button } from "@/components/ui/button";
 import { SlidersHorizontal } from "lucide-react";
 
-import { getPingStatus } from "@/selectors/openai/openlit/database-config";
+import { getPingStatus } from "@/selectors/database-config";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
