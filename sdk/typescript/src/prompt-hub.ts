@@ -22,7 +22,7 @@ export default class PromptHub {
     }
 
     try {
-      return await fetch(`${url}/api/prompt/get-compiled`, {
+      return await fetch(`${url}/openai/openlit/api/prompt/get-compiled`, {
         method: 'POST',
         body: JSON.stringify({
           name: options.name,

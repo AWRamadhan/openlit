@@ -1,11 +1,11 @@
 import { create } from "zustand";
 import { UserStore, userStoreSlice } from "./user";
 import { FilterStore, filterStoreSlice } from "./filter";
-import { DatabaseStore, databaseConfigStoreSlice } from "./database-config";
+import { DatabaseStore, databaseConfigStoreSlice } from "./openai/openlit/database-config";
 import { withLenses } from "@dhmk/zustand-lens";
 import { devtools } from "zustand/middleware";
-import { OpengroundStore, opengroundStoreSlice } from "./openground";
-import { DashboardStore, dashboardStoreSlice } from "./dashboard";
+import { OpengroundStore, opengroundStoreSlice } from "./openai/openlit/openground";
+import { DashboardStore, dashboardStoreSlice } from "./openai/openlit/dashboard";
 
 export type RootStore = {
 	user: UserStore;

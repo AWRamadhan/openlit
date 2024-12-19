@@ -9,28 +9,28 @@ function NumberStats() {
 				heading="Avg utilization percentage"
 				textSuffix="%"
 				icon={UtilityPole}
-				url="/api/metrics/gpu/utilization/average"
+				url="/openai/openlit/api/metrics/gpu/utilization/average"
 			/>
 			<StatCard
 				dataKey="temperature"
 				heading="Avg temperature"
 				icon={Thermometer}
 				textSuffix="°C"
-				url="/api/metrics/gpu/temperature/average"
+				url="/openai/openlit/api/metrics/gpu/temperature/average"
 			/>
 			<StatCard
 				dataKey="power_draw"
 				heading="Avg power draw"
 				icon={PowerIcon}
 				textSuffix="W"
-				url="/api/metrics/gpu/power/average"
+				url="/openai/openlit/api/metrics/gpu/power/average"
 			/>
 			<StatCard
 				dataKey="memory_used"
 				heading="Average memory used"
 				icon={MemoryStick}
 				textSuffix="MB"
-				url="/api/metrics/gpu/memory/average"
+				url="/openai/openlit/api/metrics/gpu/memory/average"
 			/>
 		</div>
 	);

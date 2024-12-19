@@ -1,7 +1,7 @@
 import { useRootStore } from "@/store";
-import { getDashboardType, setDashboardType } from "@/selectors/dashboard";
+import { getDashboardType, setDashboardType } from "@/selectors/openai/openlit/dashboard";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { DASHBOARD_TYPE_OBJECT } from "@/store/dashboard";
+import { DASHBOARD_TYPE_OBJECT } from "@/store/openai/openlit/dashboard";
 import LLMDashboard from "./llm";
 import GPUDashboard from "./gpu";
 import VectorDashboard from "./vector";

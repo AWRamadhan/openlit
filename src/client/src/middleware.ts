@@ -21,7 +21,7 @@ export default withAuth(
 		const isAllowedRequestWithoutToken =
 			ALLOWED_OPENLIT_ROUTES_WITHOUT_TOKEN.includes(pathname);
 		const isAuthPage =
-			pathname.startsWith("/login") || pathname.startsWith("/register");
+			pathname.startsWith("/openai/openlit/login") || pathname.startsWith("/openai/openlit/register");
 		const isApiPage = pathname.startsWith("/api");
 
 		if (isAuthPage) {
@@ -45,7 +45,7 @@ export default withAuth(
 			}
 
 			return NextResponse.redirect(
-				new URL(`/login?callbackUrl=${encodeURIComponent(from)}`, req.url)
+				new URL(`/openai/openlit/login?callbackUrl=${encodeURIComponent(from)}`, req.url)
 			);
 		}
 	},
@@ -63,17 +63,17 @@ export default withAuth(
 
 export const config = {
 	matcher: [
-		"/api/:path*",
-		"/login",
-		"/register",
-		"/getting-started",
-		"/dashboard",
-		"/requests",
-		"/database-config",
-		"/openground",
-		"/exceptions",
-		"/prompt-hub",
-		"/vault",
-		"/api-keys",
+		"/openai/openlit/api/:path*",
+		"/openai/openlit/login",
+		"/openai/openlit/register",
+		"/openai/openlit/getting-started",
+		"/openai/openlit/dashboard",
+		"/openai/openlit/requests",
+		"/openai/openlit/database-config",
+		"/openai/openlit/openground",
+		"/openai/openlit/exceptions",
+		"/openai/openlit/prompt-hub",
+		"/openai/openlit/vault",
+		"/openai/openlit/api-keys",
 	],
 };

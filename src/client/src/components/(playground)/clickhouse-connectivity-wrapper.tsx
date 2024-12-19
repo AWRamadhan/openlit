@@ -1,5 +1,5 @@
-import { pingActiveDatabaseConfig } from "@/helpers/database-config";
-import { getPingDetails } from "@/selectors/database-config";
+import { pingActiveDatabaseConfig } from "@/helpers/openai/openlit/database-config";
+import { getPingDetails } from "@/selectors/openai/openlit/database-config";
 import { useRootStore } from "@/store";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,11 +7,11 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 const ALLOWED_CONNECTIVITY_ALERT = [
-	"/dashboard",
-	"/requests",
-	"/exceptions",
-	"/prompt-hub",
-	"/vault",
+	"/openai/openlit/dashboard",
+	"/openai/openlit/requests",
+	"/openai/openlit/exceptions",
+	"/openai/openlit/prompt-hub",
+	"/openai/openlit/vault",
 ];
 
 export default function ClickhouseConnectivityWrapper() {
@@ -35,7 +35,7 @@ export default function ClickhouseConnectivityWrapper() {
 							active clickhouse database.
 						</div>
 						<Link
-							href="/database-config"
+							href="/openai/openlit/database-config"
 							className="inline-flex my-2 border rounded md py-2 px-4 text-center bg-primary cursor-pointer text-white hover:bg-stone-950 outline-none self-start text-sm"
 						>
 							Take me there!

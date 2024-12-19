@@ -88,7 +88,7 @@ export default function ShareDialog({
 		fireRequest({
 			body: JSON.stringify({ shareArray, id }),
 			requestType: "POST",
-			url: "/api/db-config/share",
+			url: "/openai/openlit/api/db-config/share",
 			responseDataKey: "data",
 			successCb: (res) => {
 				toast.success("Db config shared!", {

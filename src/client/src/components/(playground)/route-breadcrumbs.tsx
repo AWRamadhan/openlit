@@ -11,12 +11,12 @@ import React from "react";
 
 const PATH_TO_TITLE_MAP = {
 	"/": "Home",
-	"/requests": "Request",
-	"/exceptions": "Exceptions",
-	"/prompt-hub": "Prompts",
-	"/vault": "Vault",
-	"/openground": "Openground",
-	"/database-config": "Databases",
+	"/openai/openlit/requests": "Request",
+	"/openai/openlit/exceptions": "Exceptions",
+	"/openai/openlit/prompt-hub": "Prompts",
+	"/openai/openlit/vault": "Vault",
+	"/openai/openlit/openground": "Openground",
+	"/openai/openlit/database-config": "Databases",
 	"/profile": "Profile",
 };
 

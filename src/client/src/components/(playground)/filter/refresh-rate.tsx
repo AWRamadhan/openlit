@@ -22,9 +22,9 @@ import { CLIENT_EVENTS } from "@/constants/events";
 const REFRESH_RATE_EVENT = "refresh-rate";
 
 const PAGES_ENABLED_FOR_REFRESH_RATE = [
-	"/dashboard",
-	"/requests",
-	"/exceptions",
+	"/openai/openlit/dashboard",
+	"/openai/openlit/requests",
+	"/openai/openlit/exceptions",
 ];
 
 const refreshTimes = {

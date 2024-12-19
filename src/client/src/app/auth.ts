@@ -120,8 +120,8 @@ export const authOptions = {
 		}),
 	],
 	pages: {
-		signIn: "/login",
-		newUser: "/register",
+		signIn: "/openai/openlit/login",
+		newUser: "/openai/openlit/register",
 	},
 	session: { strategy: "jwt" },
 } as AuthOptions;

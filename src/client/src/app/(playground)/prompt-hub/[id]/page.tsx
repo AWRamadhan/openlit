@@ -1,5 +1,5 @@
 "use client";
-import PromptForm from "@/components/(playground)/prompt-hub/form";
+import PromptForm from "@/components/(playground)/openai/openlit/prompt-hub/form";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,7 +10,7 @@ import {
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
-import { getPingStatus } from "@/selectors/database-config";
+import { getPingStatus } from "@/selectors/openai/openlit/database-config";
 import { useRootStore } from "@/store";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { jsonParse } from "@/utils/json";
@@ -39,7 +39,7 @@ export default function PromptHub() {
 	const fetchData = useCallback(async () => {
 		fireRequest({
 			requestType: "GET",
-			url: `/api/prompt/get/${params.id}${
+			url: `/openai/openlit/api/prompt/get/${params.id}${
 				version ? "?version=" + version : ""
 			}`,
 			failureCb: (err?: string) => {
@@ -233,7 +233,7 @@ export default function PromptHub() {
 				<div className="flex flex-col w-full gap-4 overflow-auto">
 					{updatedData.versions.map((versionItem: any) => (
 						<Link
-							href={`/prompt-hub/${params.id}${
+							href={`/openai/openlit/prompt-hub/${params.id}${
 								versionItem.status === "DRAFT"
 									? ""
 									: `?version=${versionItem.version}`

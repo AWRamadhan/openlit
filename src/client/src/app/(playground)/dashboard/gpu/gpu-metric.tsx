@@ -11,7 +11,7 @@ import { useCallback, useEffect } from "react";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { getFilterDetails } from "@/selectors/filter";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/database-config";
+import { getPingStatus } from "@/selectors/openai/openlit/database-config";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import IntermediateState from "@/components/(playground)/intermediate-state";
 import { getFilterParamsForDashboard } from "@/helpers/filter";
@@ -36,7 +36,7 @@ export default function GPUMetric({
 				...getFilterParamsForDashboard(filter),
 			}),
 			requestType: "POST",
-			url: url ? url : "/api/metrics/gpu",
+			url: url ? url : "/openai/openlit/api/metrics/gpu",
 			responseDataKey: "data",
 		});
 	}, [filter]);

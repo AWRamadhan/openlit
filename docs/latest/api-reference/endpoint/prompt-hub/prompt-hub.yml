@@ -6,7 +6,7 @@ info:
 servers:
   - url: http://localhost:3000
 paths:
-  /api/prompt/get-compiled:
+  /openai/openlit/api/prompt/get-compiled:
     post:
       summary: Get Compiled Prompt
       description: Fetches a compiled prompt using the provided prompt ID, version, and variables.

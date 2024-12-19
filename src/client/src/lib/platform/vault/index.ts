@@ -3,15 +3,15 @@ import {
 	SecretGetFilters,
 	SecretGetFiltersWithApiKey,
 	SecretInput,
-} from "@/constants/vault";
-import { normalizeSecretDataForSDK, verifySecretInput } from "@/helpers/vault";
+} from "@/constants/openai/openlit/vault";
+import { normalizeSecretDataForSDK, verifySecretInput } from "@/helpers/openai/openlit/vault";
 import { getCurrentUser } from "@/lib/session";
 import { throwIfError } from "@/utils/error";
 import Sanitizer from "@/utils/sanitizer";
 import { OPENLIT_VAULT_TABLE_NAME } from "./table-details";
 import { dataCollector } from "../common";
 import { jsonStringify } from "@/utils/json";
-import { getAPIKeyInfo } from "../api-keys";
+import { getAPIKeyInfo } from "../openai/openlit/api-keys";
 
 export async function getSecretByName({ key }: { key: string }) {
 	const query = `

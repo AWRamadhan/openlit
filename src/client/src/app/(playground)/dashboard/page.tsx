@@ -3,7 +3,7 @@ import Filter from "@/components/(playground)/filter";
 import {
 	DashboardTypeFilter,
 	DashboardTypeGraphContainer,
-} from "./dashboard-type";
+} from "./openai/openlit/dashboard-type";
 
 export default function DashboardPage() {
 	return (

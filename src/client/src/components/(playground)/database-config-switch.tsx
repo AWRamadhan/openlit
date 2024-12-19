@@ -1,10 +1,10 @@
-import { getDatabaseConfigList } from "@/selectors/database-config";
+import { getDatabaseConfigList } from "@/selectors/openai/openlit/database-config";
 import { useRootStore } from "@/store";
 import { useEffect } from "react";
 import {
 	changeActiveDatabaseConfig,
 	fetchDatabaseConfigList,
-} from "@/helpers/database-config";
+} from "@/helpers/openai/openlit/database-config";
 import {
 	Select,
 	SelectContent,

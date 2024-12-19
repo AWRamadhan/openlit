@@ -37,7 +37,7 @@ export default function Generate({ refresh }: { refresh: () => void }) {
 		});
 		fireCreateRequest({
 			requestType: "POST",
-			url: `/api/api-key`,
+			url: `/openai/openlit/api/api-key`,
 			body: jsonStringify({
 				name: formdata.name,
 			}),

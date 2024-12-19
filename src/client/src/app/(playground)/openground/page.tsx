@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/table";
 import { EyeIcon } from "lucide-react";
 import { get } from "lodash";
-import OpengroundHeader from "@/components/(playground)/openground/header";
+import OpengroundHeader from "@/components/(playground)/openai/openlit/openground/header";
 
 const columns = [
 	{
@@ -70,7 +70,7 @@ const columns = [
 	{
 		header: "Actions",
 		render: (data: any) => (
-			<Link href={`/openground/${data.id}`}>
+			<Link href={`/openai/openlit/openground/${data.id}`}>
 				<EyeIcon />
 			</Link>
 		),
@@ -82,7 +82,7 @@ export default function Openground() {
 	const fetchData = useCallback(async () => {
 		fireRequest({
 			requestType: "GET",
-			url: `/api/openground`,
+			url: `/openai/openlit/api/openai/openlit/openground`,
 			failureCb: (err?: string) => {
 				toast.error(err || `Cannot connect to server!`, {
 					id: "openground",

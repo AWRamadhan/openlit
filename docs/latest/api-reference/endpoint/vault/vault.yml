@@ -6,7 +6,7 @@ info:
 servers:
   - url: http://localhost:3000
 paths:
-  /api/vault/get-secrets:
+  /openai/openlit/api/openai/openlit/vault/get-secrets:
     post:
       summary: Get Secret(s)
       description: Fetches secret(s) using the provided key or tags.

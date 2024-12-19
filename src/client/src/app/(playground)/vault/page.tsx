@@ -5,13 +5,13 @@ import { toast } from "sonner";
 import { get } from "lodash";
 import { format } from "date-fns";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/database-config";
+import { getPingStatus } from "@/selectors/openai/openlit/database-config";
 import TableData from "@/components/common/table-data";
 import { EditIcon, TrashIcon } from "lucide-react";
 import ConfirmationModal from "@/components/common/confirmation-modal";
-import VaultHeader from "@/components/(playground)/vault/header";
+import VaultHeader from "@/components/(playground)/openai/openlit/vault/header";
 import { useParams } from "next/navigation";
-import SecretForm from "@/components/(playground)/vault/form";
+import SecretForm from "@/components/(playground)/openai/openlit/vault/form";
 
 const columns = [
 	{
@@ -73,7 +73,7 @@ export default function Vault() {
 	const fetchData = useCallback(async () => {
 		fireRequest({
 			requestType: "POST",
-			url: `/api/vault/get`,
+			url: `/openai/openlit/api/openai/openlit/vault/get`,
 			body: JSON.stringify(""),
 			failureCb: (err?: string) => {
 				toast.error(err || `Cannot connect to server!`, {
@@ -87,7 +87,7 @@ export default function Vault() {
 		async ({ id }: { id: string }) => {
 			fireDeleteRequest({
 				requestType: "DELETE",
-				url: `/api/vault/${id}`,
+				url: `/openai/openlit/api/openai/openlit/vault/${id}`,
 				successCb: (data: any) => {
 					toast.success(data, {
 						id: "vault",

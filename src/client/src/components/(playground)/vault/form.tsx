@@ -44,7 +44,7 @@ export default function SecretForm({
 		fireRequest({
 			body: JSON.stringify(payload),
 			requestType: payload.id ? "PUT" : "POST",
-			url: "/api/vault",
+			url: "/openai/openlit/api/openai/openlit/vault",
 			successCb: () => {
 				toast.success(
 					`${payload.id ? "Updated" : "Created"} secret successfully!`,

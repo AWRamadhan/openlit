@@ -8,7 +8,7 @@ import {
 	setEvaluatedData,
 	setEvaluatedLoading,
 	setPrompt,
-} from "@/selectors/openground";
+} from "@/selectors/openai/openlit/openground";
 import { useRootStore } from "@/store";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { usePostHog } from "posthog-js/react";
@@ -45,7 +45,7 @@ export default function PromptInput() {
 		fireRequest({
 			body: JSON.stringify(payload),
 			requestType: "POST",
-			url: "/api/openground",
+			url: "/openai/openlit/api/openai/openlit/openground",
 			responseDataKey: "data",
 			successCb: (data) => {
 				toast.success("Evaluation finished!", {

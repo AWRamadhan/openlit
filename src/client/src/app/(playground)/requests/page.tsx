@@ -7,7 +7,7 @@ import RequestDetails from "@/components/(playground)/request/request-details";
 import { toast } from "sonner";
 import { getFilterDetails } from "@/selectors/filter";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/database-config";
+import { getPingStatus } from "@/selectors/openai/openlit/database-config";
 import List from "./list";
 
 export default function RequestPage() {
@@ -18,7 +18,7 @@ export default function RequestPage() {
 		fireRequest({
 			body: JSON.stringify(filter),
 			requestType: "POST",
-			url: "/api/metrics/request",
+			url: "/openai/openlit/api/metrics/request",
 			failureCb: (err?: string) => {
 				toast.error(err || `Cannot connect to server!`, {
 					id: "request-page",

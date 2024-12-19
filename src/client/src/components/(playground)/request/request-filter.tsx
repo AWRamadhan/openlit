@@ -14,7 +14,7 @@ import SlideWithValue from "@/components/(playground)/filter/slider-with-value";
 import { Button } from "@/components/ui/button";
 import { SlidersHorizontal } from "lucide-react";
 
-import { getPingStatus } from "@/selectors/database-config";
+import { getPingStatus } from "@/selectors/openai/openlit/database-config";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "sonner";
@@ -81,7 +81,7 @@ const DynamicFilters = ({
 				timeLimit: filter.timeLimit,
 			}),
 			requestType: "POST",
-			url: "/api/metrics/request/config",
+			url: "/openai/openlit/api/metrics/request/config",
 			successCb: (resp) => {
 				updateConfig(resp.data?.[0]);
 			},

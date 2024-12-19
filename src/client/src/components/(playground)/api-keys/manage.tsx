@@ -2,7 +2,7 @@
 import ConfirmationModal from "@/components/common/confirmation-modal";
 import TableData from "@/components/common/table-data";
 import { Badge } from "@/components/ui/badge";
-import { getPingStatus } from "@/selectors/database-config";
+import { getPingStatus } from "@/selectors/openai/openlit/database-config";
 import { useRootStore } from "@/store";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import copy from "copy-to-clipboard";
@@ -84,7 +84,7 @@ export default function ManageKeys() {
 	const fetchData = useCallback(async () => {
 		fireRequest({
 			requestType: "GET",
-			url: `/api/api-key`,
+			url: `/openai/openlit/api/api-key`,
 			failureCb: (err?: string) => {
 				toast.error(err || `Cannot connect to server!`, {
 					id: "api-key",
@@ -103,7 +103,7 @@ export default function ManageKeys() {
 		async ({ id }: { id: string }) => {
 			fireDeleteRequest({
 				requestType: "DELETE",
-				url: `/api/api-key/${id}`,
+				url: `/openai/openlit/api/api-key/${id}`,
 				successCb: () => {
 					fetchData();
 				},

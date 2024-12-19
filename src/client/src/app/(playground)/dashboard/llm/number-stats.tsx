@@ -19,7 +19,7 @@ function NumberStats() {
 				}}
 				heading="Total requests"
 				icon={RadioTower}
-				url="/api/metrics/request/total"
+				url="/openai/openlit/api/metrics/request/total"
 			/>
 			<StatCard
 				dataKey="average_duration"
@@ -32,14 +32,14 @@ function NumberStats() {
 				parser={(value: any) =>
 					integerParser(`${value}`, TraceMapping.requestDuration.offset)
 				}
-				url="/api/metrics/request/duration/average"
+				url="/openai/openlit/api/metrics/request/duration/average"
 			/>
 			<StatCard
 				dataKey="total_tokens"
 				extraParams={{ type: "total" }}
 				heading="Avg tokens per request"
 				icon={Braces}
-				url="/api/metrics/llm/token/request/average"
+				url="/openai/openlit/api/metrics/llm/token/request/average"
 			/>
 			<StatCard
 				dataKey="total_usage_cost"
@@ -47,7 +47,7 @@ function NumberStats() {
 				icon={CircleDollarSign}
 				roundTo={7}
 				textPrefix="$"
-				url="/api/metrics/llm/cost/total"
+				url="/openai/openlit/api/metrics/llm/cost/total"
 			/>
 			<StatCard
 				dataKey="average_usage_cost"
@@ -55,7 +55,7 @@ function NumberStats() {
 				icon={Banknote}
 				roundTo={7}
 				textPrefix="$"
-				url="/api/metrics/llm/cost/request/average"
+				url="/openai/openlit/api/metrics/llm/cost/request/average"
 			/>
 		</div>
 	);

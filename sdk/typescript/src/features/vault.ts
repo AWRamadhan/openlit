@@ -13,7 +13,7 @@ export default class Vault {
     };
 
     try {
-      const vaultResponse = await fetch(`${url}/api/vault/get-secrets`, {
+      const vaultResponse = await fetch(`${url}/openai/openlit/api/openai/openlit/vault/get-secrets`, {
         method: 'POST',
         body: JSON.stringify({
           key: options.key,

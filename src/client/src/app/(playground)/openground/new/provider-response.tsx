@@ -1,10 +1,10 @@
-import { ProviderType } from "@/store/openground";
+import { ProviderType } from "@/store/openai/openlit/openground";
 import { useRootStore } from "@/store";
 import {
 	getEvaluatedResponse,
 	getSelectedProviders,
-} from "@/selectors/openground";
-import ProviderTable from "@/components/(playground)/openground/provider-table";
+} from "@/selectors/openai/openlit/openground";
+import ProviderTable from "@/components/(playground)/openai/openlit/openground/provider-table";
 
 export default function ProviderResponse({
 	provider,

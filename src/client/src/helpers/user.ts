@@ -6,7 +6,7 @@ import { signOut } from "next-auth/react";
 export const fetchAndPopulateCurrentUserStore = async () => {
 	const [err, user] = await asaw(
 		getData({
-			url: "/api/user/profile",
+			url: "/openai/openlit/api/user/profile",
 			method: "GET",
 		})
 	);

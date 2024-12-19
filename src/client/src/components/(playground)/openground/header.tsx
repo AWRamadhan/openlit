@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { getEvaluatedResponse, resetOpenground } from "@/selectors/openground";
+import { getEvaluatedResponse, resetOpenground } from "@/selectors/openai/openlit/openground";
 import { useRootStore } from "@/store";
 import Link from "next/link";
 
@@ -22,7 +22,7 @@ export default function OpengroundHeader({
 				{title}
 			</h1>
 			{showButton ? (
-				<Link href={"/openground/new"} onClick={resetOpengroundData}>
+				<Link href={"/openai/openlit/openground/new"} onClick={resetOpengroundData}>
 					<Button variant="secondary" className="bg-primary hover:bg-primary dark:bg-primary dark:hover:bg-primary text-stone-100 dark:text-stone-100">+ New</Button>
 				</Link>
 			) : null}

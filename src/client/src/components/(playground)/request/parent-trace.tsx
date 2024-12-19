@@ -21,7 +21,7 @@ export default function ParentTrace({
 	const fetchData = useCallback(async () => {
 		fireRequest({
 			requestType: "GET",
-			url: `/api/metrics/request/parent-span/${parentSpanId}`,
+			url: `/openai/openlit/api/metrics/request/parent-span/${parentSpanId}`,
 			responseDataKey: "record.[0]",
 			failureCb: (err?: string) => {
 				toast.error(err || `Cannot connect to server!`, {

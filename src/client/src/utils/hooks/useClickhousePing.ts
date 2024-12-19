@@ -12,7 +12,7 @@ export default function useClickhousePing() {
 		setError("");
 		try {
 			const response = await getData({
-				url: "/api/clickhouse",
+				url: "/openai/openlit/api/clickhouse",
 				method: "GET",
 			});
 

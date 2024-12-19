@@ -147,9 +147,9 @@ We are dedicated to continuously improving OpenLIT. Here's a look at what's been
 | [OpenTelemetry-native Observability SDK for Tracing and Metrics](https://github.com/openlit/openlit/tree/text-upgrade/sdk/python) | ✅ Completed  |
 | [OpenTelemetry-native GPU Monitoring](https://docs.openlit.io/latest/features/gpu)           | ✅ Completed  |
 | [Exceptions and Error Monitoring]()                                                          | ✅ Completed  |
-| [Prompt Hub for Managing and Versioning Prompts](https://docs.openlit.io/latest/features/prompt-hub) | ✅ Completed  |
+| [Prompt Hub for Managing and Versioning Prompts](https://docs.openlit.io/latest/features/openai/openlit/prompt-hub) | ✅ Completed  |
 | [OpenGround for Testing and Comparing LLMs]()                                                | ✅ Completed  |
-| [Vault for Central Management of LLM API Keys and Secrets](https://docs.openlit.io/latest/features/vault) | ✅ Completed  |
+| [Vault for Central Management of LLM API Keys and Secrets](https://docs.openlit.io/latest/features/openai/openlit/vault) | ✅ Completed  |
 | [Cost Tracking for Custom Models](https://docs.openlit.io/latest/features/pricing)           | ✅ Completed  |
 | [Auto-Evaluation Metrics Based on Usage](https://github.com/openlit/openlit/issues/470)                                                   | 🔜 Coming Soon |
 | [Human Feedback for LLM Events](https://github.com/openlit/openlit/issues/471)                                                            | 🔜 Coming Soon |
@@ -167,7 +167,7 @@ Unsure where to start? Here are a few ways to get involved:
 Your input helps us grow and improve, and we're here to support you every step of the way.
 
 [![OpenLIT - One click observability, evals for LLMs & GPUs | Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=460690&theme=light)](https://www.producthunt.com/posts/openlit?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-openlit)
-<a href="https://fazier.com/launches/openlit-2" target="_blank" rel="noopener noreferrer"><img src="https://fazier.com/api/v1/public/badges/embed_image.svg?launch_id=779&badge_type=daily" width="270" alt="Example Image" class="d-inline-block mt-3 p-3 rounded img-fluid" /></a>
+<a href="https://fazier.com/launches/openlit-2" target="_blank" rel="noopener noreferrer"><img src="https://fazier.com/openai/openlit/api/v1/public/badges/embed_image.svg?launch_id=779&badge_type=daily" width="270" alt="Example Image" class="d-inline-block mt-3 p-3 rounded img-fluid" /></a>
 
 ## 💚 Community & Support
 

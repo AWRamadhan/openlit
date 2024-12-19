@@ -16,7 +16,7 @@ import { useCallback, useEffect, useState } from "react";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { getFilterDetails } from "@/selectors/filter";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/database-config";
+import { getPingStatus } from "@/selectors/openai/openlit/database-config";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
@@ -33,7 +33,7 @@ function TopModels() {
 		fireRequest({
 			body: JSON.stringify(getFilterParamsForDashboard(filter)),
 			requestType: "POST",
-			url: "/api/metrics/llm/model/top",
+			url: "/openai/openlit/api/metrics/llm/model/top",
 			responseDataKey: "data",
 		});
 	}, [filter]);
@@ -121,7 +121,7 @@ function ModelsPerTime() {
 		fireRequest({
 			body: JSON.stringify(getFilterParamsForDashboard(filter)),
 			requestType: "POST",
-			url: "/api/metrics/llm/model/time",
+			url: "/openai/openlit/api/metrics/llm/model/time",
 			responseDataKey: "data",
 		});
 	}, [filter]);
@@ -217,7 +217,7 @@ function TokensPerTime() {
 		fireRequest({
 			body: JSON.stringify(getFilterParamsForDashboard(filter)),
 			requestType: "POST",
-			url: "/api/metrics/llm/token/time",
+			url: "/openai/openlit/api/metrics/llm/token/time",
 			responseDataKey: "data",
 		});
 	}, [filter]);
@@ -342,7 +342,7 @@ function TokenCharts() {
 						heading="Avg prompt tokens / request"
 						loadingClass="h-8 w-12"
 						textClass="text-2xl"
-						url="/api/metrics/llm/token/request/average"
+						url="/openai/openlit/api/metrics/llm/token/request/average"
 					/>
 					<StatCard
 						dataKey="total_tokens"
@@ -350,7 +350,7 @@ function TokenCharts() {
 						heading="Avg completion tokens / request"
 						loadingClass="h-8 w-12"
 						textClass="text-2xl"
-						url="/api/metrics/llm/token/request/average"
+						url="/openai/openlit/api/metrics/llm/token/request/average"
 					/>
 				</div>
 				<TokensPerTime />

@@ -136,7 +136,7 @@ export function AuthForm({ type }: { type: "login" | "register" }) {
 					? "Don't have an account? "
 					: "Already have an account?"}{" "}
 				<Link
-					href={type === "login" ? "/register" : "/login"}
+					href={type === "login" ? "/openai/openlit/register" : "/openai/openlit/login"}
 					className="ml-auto inline-block text-sm underline text-primary"
 				>
 					{type === "login" ? " Sign up" : " Sign in"}

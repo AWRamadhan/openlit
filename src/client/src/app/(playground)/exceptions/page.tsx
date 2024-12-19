@@ -5,7 +5,7 @@ import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { toast } from "sonner";
 import { getFilterDetails } from "@/selectors/filter";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/database-config";
+import { getPingStatus } from "@/selectors/openai/openlit/database-config";
 import RequestFilter from "@/components/(playground)/request/request-filter";
 import { omit } from "lodash";
 import List from "./list";
@@ -19,7 +19,7 @@ export default function RequestPage() {
 		fireRequest({
 			body: JSON.stringify(omit(filter, ["selectedConfig"])),
 			requestType: "POST",
-			url: "/api/metrics/exception",
+			url: "/openai/openlit/api/metrics/exception",
 			failureCb: (err?: string) => {
 				toast.error(err || `Cannot connect to server!`, {
 					id: "request-page",

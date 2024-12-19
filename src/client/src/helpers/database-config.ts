@@ -11,7 +11,7 @@ export const fetchDatabaseConfigList = async (
 	const [, data] = await asaw(
 		getData({
 			method: "GET",
-			url: "/api/db-config",
+			url: "/openai/openlit/api/db-config",
 		})
 	);
 
@@ -26,7 +26,7 @@ export const pingActiveDatabaseConfig = async () => {
 	});
 	const [err, data] = await asaw(
 		getData({
-			url: "/api/clickhouse",
+			url: "/openai/openlit/api/clickhouse",
 			method: "POST",
 		})
 	);
@@ -45,7 +45,7 @@ export const changeActiveDatabaseConfig = async (
 	const [err, data] = await asaw(
 		getData({
 			method: "POST",
-			url: `/api/db-config/current/${databaseConfigId}`,
+			url: `/openai/openlit/api/db-config/current/${databaseConfigId}`,
 		})
 	);
 
@@ -73,7 +73,7 @@ export const changeActiveDatabaseConfig = async (
 export const deleteDatabaseConfig = async (databaseConfigId: string) => {
 	const [err, data] = await asaw(
 		deleteData({
-			url: `/api/db-config/${databaseConfigId}`,
+			url: `/openai/openlit/api/db-config/${databaseConfigId}`,
 		})
 	);
 

@@ -5,18 +5,18 @@ import FormBuilder, {
 } from "@/components/common/form-builder";
 import DatabaseConfigTabs, {
 	DatabaseConfigTabItemProps,
-} from "@/app/(playground)/database-config/database-config-tabs";
+} from "@/app/(playground)/openai/openlit/database-config/openai/openlit/database-config-tabs";
 import { Button } from "@/components/ui/button";
 import { DatabaseConfig, DatabaseConfigWithActive } from "@/constants/dbConfig";
 import {
 	changeActiveDatabaseConfig,
 	deleteDatabaseConfig,
 	fetchDatabaseConfigList,
-} from "@/helpers/database-config";
+} from "@/helpers/openai/openlit/database-config";
 import {
 	getDatabaseConfigList,
 	getDatabaseConfigListIsLoading,
-} from "@/selectors/database-config";
+} from "@/selectors/openai/openlit/database-config";
 import { useRootStore } from "@/store";
 import useFetchWrapper from "@/utils/hooks/useFetchWrapper";
 import { isNil, keyBy } from "lodash";
@@ -60,7 +60,7 @@ function ModifyDatabaseConfig({
 			fireRequest({
 				body: JSON.stringify(payload),
 				requestType: "POST",
-				url: "/api/db-config",
+				url: "/openai/openlit/api/db-config",
 				responseDataKey: "data",
 				successCb: () => {
 					fetchDatabaseConfigList((data: any[]) => {

@@ -1,7 +1,7 @@
 import getMessage from "@/constants/messages";
 import { getDBConfigById, getDBConfigByUser } from "@/lib/db-config";
 import { dataCollector } from "@/lib/platform/common";
-import { OPENLIT_VAULT_TABLE_NAME } from "@/lib/platform/vault/table-details";
+import { OPENLIT_VAULT_TABLE_NAME } from "@/lib/platform/openai/openlit/vault/table-details";
 import prisma from "@/lib/prisma";
 import asaw from "@/utils/asaw";
 import { consoleLog } from "@/utils/log";

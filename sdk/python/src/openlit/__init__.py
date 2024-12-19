@@ -398,7 +398,7 @@ def get_prompt(url=None, name=None, api_key=None, prompt_id=None,
     )
 
     # Construct the API endpoint
-    endpoint = url + "/api/prompt/get-compiled"
+    endpoint = url + "/openai/openlit/api/prompt/get-compiled"
 
     # Prepare the payload
     payload = {
@@ -453,7 +453,7 @@ def get_secrets(url=None, api_key=None, key=None, tags=None, should_set_env=None
     )
 
     # Construct the API endpoint
-    endpoint = url + "/api/vault/get-secrets"
+    endpoint = url + "/openai/openlit/api/openai/openlit/vault/get-secrets"
 
     # Prepare the payload
     payload = {

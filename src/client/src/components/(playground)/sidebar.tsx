@@ -37,42 +37,42 @@ const SIDEBAR_ITEMS: SidebarItemProps[] = [
 	{
 		icon: <LayoutDashboard className={ICON_CLASSES} />,
 		text: "Dashboard",
-		link: "/dashboard",
+		link: "/openai/openlit/dashboard",
 	},
 	{
 		icon: <FileJson2 className={ICON_CLASSES} />,
 		text: "Requests",
-		link: "/requests",
+		link: "/openai/openlit/requests",
 	},
 	{
 		icon: <ShieldAlert className={ICON_CLASSES} />,
 		text: "Exceptions",
-		link: "/exceptions",
+		link: "/openai/openlit/exceptions",
 	},
 	{
 		icon: <Component className={ICON_CLASSES} />,
 		text: "Prompt Hub",
-		link: "/prompt-hub",
+		link: "/openai/openlit/prompt-hub",
 	},
 	{
 		icon: <BookKey className={ICON_CLASSES} />,
 		text: "Vault",
-		link: "/vault",
+		link: "/openai/openlit/vault",
 	},
 	{
 		icon: <MonitorPlay className={ICON_CLASSES} />,
 		text: "Openground",
-		link: "/openground",
+		link: "/openai/openlit/openground",
 	},
 	{
 		icon: <DatabaseBackup className={ICON_CLASSES} />,
 		text: "Databases",
-		link: "/database-config",
+		link: "/openai/openlit/database-config",
 	},
 	{
 		icon: <KeyIcon className={ICON_CLASSES} />,
 		text: "API Keys",
-		link: "/api-keys",
+		link: "/openai/openlit/api-keys",
 	},
 ];
 
@@ -80,7 +80,7 @@ const SIDEBAR_BOTTOM_ITEMS: SidebarItemProps[] = [
 	{
 		icon: <SquarePlay className={ICON_CLASSES} />,
 		text: "Getting started",
-		link: "/getting-started",
+		link: "/openai/openlit/getting-started",
 	},
 	{
 		text: "Documentation",

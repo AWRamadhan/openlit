@@ -66,12 +66,12 @@
         "latest/features/metrics",
         "latest/features/gpu",
         "latest/features/pricing",
-        "latest/features/prompt-hub",
-        "latest/features/vault",
+        "latest/features/openai/openlit/prompt-hub",
+        "latest/features/openai/openlit/vault",
         "latest/features/guardrails",
         "latest/features/evaluations",
-        "latest/features/exceptions",
-        "latest/features/openground",
+        "latest/features/openai/openlit/exceptions",
+        "latest/features/openai/openlit/openground",
         "latest/features/multiple-db"
       ],
       "version": "latest"
@@ -185,14 +185,14 @@
         {
           "group": "Prompt Hub",
           "pages": [
-            "latest/api-reference/endpoint/prompt-hub/get"
+            "latest/api-reference/endpoint/openai/openlit/prompt-hub/get"
           ],
           "version": "latest"
         },
         {
           "group": "Vault",
           "pages": [
-            "latest/api-reference/endpoint/vault/get"
+            "latest/api-reference/endpoint/openai/openlit/vault/get"
           ],
           "version": "latest"
         }

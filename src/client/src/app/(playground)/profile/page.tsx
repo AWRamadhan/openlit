@@ -49,7 +49,7 @@ function ModifyProfileDetails({
 		fireRequest({
 			body: JSON.stringify(bodyObject),
 			requestType: "POST",
-			url: "/api/user/profile",
+			url: "/openai/openlit/api/user/profile",
 			responseDataKey: "data",
 			successCb: () => {
 				toast.success("Profile details updated!", {
@@ -141,7 +141,7 @@ export default function Profile() {
 	const fetchUser = () => {
 		getUser({
 			requestType: "GET",
-			url: "/api/user/profile",
+			url: "/openai/openlit/api/user/profile",
 			responseDataKey: "data",
 			successCb(res) {
 				setUserDetails(res);

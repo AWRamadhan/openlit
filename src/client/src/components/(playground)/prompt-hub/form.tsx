@@ -79,7 +79,7 @@ export default function PromptForm({
 		fireRequest({
 			body: JSON.stringify(payload),
 			requestType: "POST",
-			url: "/api/prompt",
+			url: "/openai/openlit/api/prompt",
 			successCb: (response: any) => {
 				toast.success("Created prompt successfully!", {
 					id: "prompt-hub",
@@ -87,7 +87,7 @@ export default function PromptForm({
 				setIsOpen(false);
 				posthog?.capture(CLIENT_EVENTS.PROMPT_ADD_SUCCESS);
 				if (response?.data?.promptId) {
-					router.push(`/prompt-hub/${response?.data?.promptId}`);
+					router.push(`/openai/openlit/prompt-hub/${response?.data?.promptId}`);
 				}
 				if (typeof successCallback === "function") {
 					successCallback();
@@ -133,7 +133,7 @@ export default function PromptForm({
 		fireUpdateRequest({
 			body: JSON.stringify(payload),
 			requestType: "POST",
-			url: "/api/prompt/version",
+			url: "/openai/openlit/api/prompt/version",
 			successCb: (response: any) => {
 				toast.success("Updated prompt version successfully!", {
 					id: "prompt-hub",
@@ -142,7 +142,7 @@ export default function PromptForm({
 				posthog?.capture(CLIENT_EVENTS.PROMPT_VERSION_ADD_SUCCESS);
 				if (response?.data?.promptId) {
 					router.push(
-						`/prompt-hub/${response?.data?.promptId}?version=${payload.version}`
+						`/openai/openlit/prompt-hub/${response?.data?.promptId}?version=${payload.version}`
 					);
 				}
 				if (typeof successCallback === "function") {

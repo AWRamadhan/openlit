@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { get } from "lodash";
 import { format } from "date-fns";
 import { useRootStore } from "@/store";
-import { getPingStatus } from "@/selectors/database-config";
+import { getPingStatus } from "@/selectors/openai/openlit/database-config";
 import TableData from "@/components/common/table-data";
 import { BookOpenText, TrashIcon } from "lucide-react";
 import ConfirmationModal from "@/components/common/confirmation-modal";
@@ -55,7 +55,7 @@ const columns = [
 		render: (data: any, extraFunction: { handleDelete: (p?: any) => void }) => (
 			<div className="flex justify-center gap-4">
 				<Link
-					href={`/prompt-hub/${data.promptId}`}
+					href={`/openai/openlit/prompt-hub/${data.promptId}`}
 					className="inline-block hover:text-stone-700 hover:dark:text-stone-300"
 				>
 					<BookOpenText className="w-4 hover:text-primary" />
@@ -83,7 +83,7 @@ export default function PromptHub() {
 	const fetchData = useCallback(async () => {
 		fireRequest({
 			requestType: "POST",
-			url: `/api/prompt/get`,
+			url: `/openai/openlit/api/prompt/get`,
 			failureCb: (err?: string) => {
 				toast.error(err || `Cannot connect to server!`, {
 					id: "prompt-hub",
@@ -96,7 +96,7 @@ export default function PromptHub() {
 		async ({ id }: { id: string }) => {
 			fireDeleteRequest({
 				requestType: "DELETE",
-				url: `/api/prompt/${id}`,
+				url: `/openai/openlit/api/prompt/${id}`,
 				successCb: (data: any) => {
 					toast.success(data, {
 						id: "prompt-hub",
